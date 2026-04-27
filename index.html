@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flappy Lane Racer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-panel" aria-label="Flappy Lane Racer game">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Three-lane arcade</p>
+            <h1>Flappy Lane Racer</h1>
+          </div>
+          <div class="scoreboard" aria-live="polite">
+            <span>Score <strong id="score">0</strong></span>
+            <span>Best <strong id="best">0</strong></span>
+          </div>
+        </div>
+
+        <canvas id="game" width="432" height="720" aria-label="Playable car simulator game"></canvas>
+
+        <div class="controls">
+          <button class="icon-button" id="leftBtn" type="button" aria-label="Move left">←</button>
+          <button class="primary-button" id="flapBtn" type="button">Boost</button>
+          <button class="icon-button" id="rightBtn" type="button" aria-label="Move right">→</button>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <div class="mode-card">
+          <p class="eyebrow">Mode</p>
+          <div class="mode-list" role="radiogroup" aria-label="Choose difficulty">
+            <button class="mode active" type="button" data-mode="easy" role="radio" aria-checked="true">
+              <span>Easy</span>
+              <small>Wide gaps, calm road</small>
+            </button>
+            <button class="mode" type="button" data-mode="medium" role="radio" aria-checked="false">
+              <span>Medium</span>
+              <small>Faster traffic</small>
+            </button>
+            <button class="mode" type="button" data-mode="hard" role="radio" aria-checked="false">
+              <span>Hard</span>
+              <small>Tight gaps, heavy speed</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="mode-card">
+          <p class="eyebrow">Drive</p>
+          <div class="button-row">
+            <button id="startBtn" class="primary-button" type="button">Start</button>
+            <button id="pauseBtn" class="secondary-button" type="button">Pause</button>
+          </div>
+          <p class="hint">Use Space or ↑ to boost, ← and → to switch lanes. On mobile, tap Boost and the arrows.</p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
