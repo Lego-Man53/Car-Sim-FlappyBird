@@ -5,7 +5,7 @@ The car drives automatically; your job is to switch lanes and dodge traffic.
 
 ## Play
 
-    Open URL: https://lego-man53.github.io/Car-Sim/
+Open URL:     https://lego-man53.github.io/Car-Sim/
 
 ## Controls
 
