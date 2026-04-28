@@ -73,15 +73,6 @@ function setMode(nextMode) {
   reset();
 }
 
-function boost() {
-  if (!running || gameOver) {
-    reset();
-  }
-  if (!paused) {
-    car.vy = settings[mode].boost;
-  }
-}
-
 function switchLane(direction) {
   if (!running || paused || gameOver) return;
   car.lane = Math.max(0, Math.min(laneCount - 1, car.lane + direction));
