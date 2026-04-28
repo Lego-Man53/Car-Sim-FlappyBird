@@ -5,7 +5,7 @@ The car drives automatically; your job is to switch lanes and dodge traffic.
 
 ## Play
 
-Open `index.html` in a browser, or host this folder with GitHub Pages.
+  Open URL: https://lego-man53.github.io/Car-Sim/
 
 ## Controls
 
@@ -18,12 +18,3 @@ Open `index.html` in a browser, or host this folder with GitHub Pages.
 - Easy: slower traffic and wider gaps
 - Medium: faster traffic
 - Hard: tighter gaps and heavier speed
-
-## GitHub Pages
-
-After pushing this repository to GitHub:
-
-1. Open the repository settings.
-2. Go to **Pages**.
-3. Set the source to the `main` branch and `/root`.
-4. Save, then open the Pages URL GitHub provides.
